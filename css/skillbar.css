@@ -1,0 +1,103 @@
+/* code from Keith Light and modified */
+
+
+.container {
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+
+h1 {
+  padding: 2rem 0;
+}
+
+
+
+dt:after {
+  border-radius: 4px 4px 4px 4px;
+  width: 100%;
+  background-color: black;
+  height: 1rem;
+  content: "";
+  display: block;
+
+}
+
+dd {
+  border-radius: 4px 4px 4px 4px;
+  background: red;
+  width: 0;
+  height: 1rem;
+  position: relative;
+  top: -1rem;
+}
+dd.html {
+  background: #F44336;
+}
+dd.css {
+  background: #2196F3;
+}
+dd.jquery {
+  background: #FFCA28;
+}
+dd.scss {
+  background: #F06292;
+}
+dd.javascript {
+  background: #FFA000;
+}
+dd.bootstrap {
+  background: #303F9F;
+}
+
+
+
+
+dd.matherialize {
+  background: #F44336;
+}
+dd.c {
+  background: #2196F3;
+}
+dd.java {
+  background: #FFCA28;
+}
+dd.ror {
+  background: #F06292;
+}
+dd.android {
+  background: #FFA000;
+}
+dd.swift {
+  background: #303F9F;
+}
+
+
+
+dd.nodejs {
+  background: #F44336;
+}
+dd.anguloarjs {
+  background: #2196F3;
+}
+dd.react {
+  background: #FFCA28;
+}
+dd.r {
+  background: #F06292;
+}
+dd.wolfram {
+  background: #FFA000;
+}
+dd.git {
+  background: #303F9F;
+}
