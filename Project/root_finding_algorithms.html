@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="./style/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+
+            <li><a href="#">Numerical methods =></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> General methods <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html#is_prime">Is prime?</a></li>
+                <li><a href="index.html#gcd">GCD</a></li>
+                <li><a href="index.html#lcm">LCM</a></li>
+                <li><a href="index.html#fibonacci">Fibonacci numbers</a></li>
+                <li><a href="index.html#ackermann">Ackermann function</a></li>
+                <li><a href="index.html#horner">Horner's method</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Complex numbers <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="complex_numbers.html#complex_sum">Sum</a></li>
+                <li><a href="complex_numbers.html#complex_sub">Subtraction</a></li>
+                <li><a href="complex_numbers.html#complex_product">Product</a></li>
+                <li><a href="complex_numbers.html#complex_arg">Argument</a></li>
+                <li><a href="complex_numbers.html#complex_mod">Module</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Linear algebra <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="linear_algebra.html#sum_vector">Vector operations</a></li>
+                <li><a href="linear_algebra.html#op_matrix">Matrix operations</a></li>
+                <li><a href="linear_algebra.html#gauss_matrix">Equation systems</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Root-finding algorithms <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="root_finding_algorithms.html#roots">Bisection method</a></li>
+                <li><a href="root_finding_algorithms.html#roots">Secant method</a></li>
+                <li><a href="root_finding_algorithms.html#roots">False position method</a></li>
+                <li><a href="root_finding_algorithms.html#roots">Newton's method</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Interpolation <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="interpolation.html#">Divided differences</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Numerical integration <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="numerical_integration.html#">Simpson's method</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/virttuall">
+            	<img alt="Github" src="images/GitHub-Mark-32px.png" height="25px" width="25px">
+            </a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+
+    </nav>
+    <br><br><br><br>
+    <div class = "container">
+
+
+
+      <div class = "presentation">
+        <h1 align = "center"> Project: numerical methods and programming </h1>
+        <div class = "row">
+          <div class = "col-md-8">
+            <br><br>
+            <h2> Student: Yeison Garcia </h2>
+            <h2> Professor: Humberto Sarria Zapata </h2>
+            <h2> Description: </h2>
+            <p>
+              The following page is the project of numerical methods and programming where you can find several numerical methods and algorithms learned along the course.
+            </p>
+          </div>
+          <div class = "col-md-4">
+            <img src="./images/logo_unal.svg.png" class="img-responsive" alt="logo-unal">
+          </div>
+        </div>
+      </div>
+
+      <div id="roots">
+        <h1> Root-finding algorithms </h1>
+        <div class = "row">
+          <div class = "col-md-4">
+          <h2> select function </h2>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="function_select" id="root_f0" value="option0" checked>
+            <label class="form-check-label" for="root_f0">
+              3x+3
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="function_select" id="root_f1" value="option1" >
+            <label class="form-check-label" for="root_f1">
+              x<sup>5</sup> - 3*x<sup>4</sup> + 10*x - 8
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="function_select" id="root_f2" value="option2" >
+            <label class="form-check-label" for="root_f2">
+              Sin(x)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="function_select" id="root_f3" value="option3" >
+            <label class="form-check-label" for="root_f3">
+              x<sup>3</sup>
+            </label>
+          </div>
+          </div>
+          <div class = "col-md-4">
+            <h2> select method </h2>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="method_select" id="root_m0" value="option0" checked>
+              <label class="form-check-label" for="root_m0">
+                Bisection
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="method_select" id="root_m1" value="option1" checked>
+              <label class="form-check-label" for="root_m1">
+                Secant
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="method_select" id="root_m1" value="option2" checked>
+              <label class="form-check-label" for="root_m1">
+                False position
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="method_select" id="root_m1" value="option3" checked>
+              <label class="form-check-label" for="root_m1">
+                Newton
+              </label>
+            </div>
+          </div>
+          <div class = "col-md-4">
+            <h2> Initial points </h2>
+            <div class="form-group">
+              <label for="input_root_a">A </label>
+              <input type = "text" id="input_root_a" class = "form-control">
+              <label for="input_root_b">B ( no necessary for newton)</label>
+              <input type = "text" id="input_root_b" class = "form-control">
+              <label for="input_root_iter">Number of interations</label>
+              <input type = "text" id="input_root_iter" class = "form-control">
+            </div>
+          </div>
+        </div>
+        <button type="button" id="cal_root" class = "btn btn-success">Calculate</button>
+        <br><br>
+        <p id="answer_root"> </p>
+      </div>
+
+        <!---
+        -->
+      </div>
+      <hr>
+
+
+
+
+    </div>
+    <br><br><br>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src = "./js/roots.js"> </script>
+    <script type="text/javascript" src = "./js/interpolation.js"> </script>
+    <script type="text/javascript" src = "./js/complexNumbers.js"> </script>
+    <script type="text/javascript" src = "./js/numberTheory.js"> </script>
+    <script type="text/javascript" src = "./js/linearAlgebra.js"> </script>
+    <script type="text/javascript" src = "./js/buttonListeners.js"> </script>
+    <script type="text/javascript" src = "./js/tableCreator.js"> </script>
+  </body>
+<html>

@@ -1,3 +1,5 @@
+/* code from Keith Light and modified */
+
 // this has nothing to do with the animation, just forces the window to be a size that allows a scroll
 var containerHeight = $(window).height() / 2;
 
